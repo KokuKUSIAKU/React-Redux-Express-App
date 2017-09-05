@@ -1,0 +1,27 @@
+{
+  "name": "recipes-react-redux-webapp",
+  "version": "0.0.1",
+  "description": "A simple React Redux web app using Express 4",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "server.js",
+  "scripts": {
+
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "express",
+    "accessibility",
+    "wai-aria"
+  ],
+  "license": "MIT"
+}
