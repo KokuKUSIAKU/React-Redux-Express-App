@@ -7,6 +7,7 @@
   },
   "main": "server.js",
   "scripts": {
+    "build":"webpack -p",
     "start": "node server.js"
   },
   "dependencies": {
