@@ -7,7 +7,7 @@
   },
   "main": "server.js",
   "scripts": {
-
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.15.2"
@@ -23,5 +23,6 @@
     "accessibility",
     "wai-aria"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": ""
 }
