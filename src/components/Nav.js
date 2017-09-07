@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 /*  eslint-enable */
 
-const Nav = (props) => (
+const Nav = ( props ) => (
   <nav className="navbar" aria-label="Site menu">
     <ul className="menu">
       <li className="menuItem"><Link to="/" aria-current="page">HOME</Link></li>

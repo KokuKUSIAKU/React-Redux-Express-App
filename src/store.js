@@ -10,5 +10,5 @@ const defaultState = {
   newrecipes
 };
 
-const store = createStore(rootReducer, defaultState);
+const store = createStore( rootReducer, defaultState );
 export default store; 

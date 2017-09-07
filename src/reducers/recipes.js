@@ -1,4 +1,4 @@
-function newrecipes(state =[]) { 
+function newrecipes( state =[] ) { 
   return state; 
 }
 export default newrecipes;
