@@ -1,16 +1,18 @@
+/* eslint-disable */
 
 import React from "react";
-import { render } from "react-dom"; 
-//require( "./styles/style.css" );
 
+/* eslint-enable */
+
+import { render } from "react-dom"; 
 
 const router = (
   <div>
-    <header class="header"> Header </header>
+    <header class="header">Header</header>
     <main> Main </main>
     <footer>footer </footer>
   </div>
-)
+);
 
 render(
   router,

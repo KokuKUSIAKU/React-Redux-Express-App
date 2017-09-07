@@ -1,8 +1,5 @@
-var webpack = require( "webpack" );
-var htmlWebpackPlugin = require( "html-webpack-plugin" );
-var path = require( "path" );
-
-
+var htmlWebpackPlugin = require( "html-webpack-plugin" ); 
+var  path = require( "path" );
 var htmlWebpackPluginConfig = new htmlWebpackPlugin({
   template: __dirname + "/index.html",
   filename: "index.html",
@@ -47,4 +44,4 @@ module.exports = {
     htmlWebpackPluginConfig
   ]
 
-}
+}; 
