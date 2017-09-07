@@ -40,27 +40,23 @@ body {
   display: none
 }
 
-.menuitem a {
+.menuItem {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+.menuItem a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   padding: 0 1em;
 }
 
-.menuitem {
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-}
-
 .navbar {
-  background-color: #fff;
-  left: -6.5em;
-  position: absolute;
-  text-align: inherit;
-  top: 3.2em;
-  transition: left 1s;
-  -webkit-transition: left 1s;
-  z-index: 1
+  font-size:1.3rem;
+  font-family: signika, sans-serif;
+  margin:0 auto;
+  padding:0.3em 0;
+  text-align: center;
 }
 
 .nv-toggle {
@@ -119,6 +115,31 @@ body {
     -ms-transform: inherit;
     -webkit-transform: inherit;
     margin: 0 0.5em;
+  }
+  .menuItem a{
+    padding:0;
+  }
+  .menu {
+    margin:0;
+    padding:0 1em 0.5em 0.2em;
+  }
+
+  .menuItem {
+    border-bottom:0.05em solid #339933;
+    display: block;
+    padding:0.25em 0;
+    text-align: left;
+  }
+
+  .navbar {
+    background-color: #fff;
+    left: -6.5em;
+    position: absolute;
+    text-align: inherit;
+    top: 3.2em;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    z-index: 1
   }
   .nv-toggle:focus, .nv-toggle:hover {
     outline: none;
