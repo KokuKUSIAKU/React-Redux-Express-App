@@ -52,8 +52,8 @@ module.exports = window.onload = (function appScript() {
   /*
   * slider managing 
   */
-  //var slider = new InitSlider( "slides", "slider-pages", sliderTransition );
-  //slider.start();
+  var slider = new InitSlider( "slides", "slider-pages", sliderTransition );
+  slider.start();
 
   /*
   @function InitSlider
