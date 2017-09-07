@@ -4,12 +4,14 @@ import React from "react";
 
 import NavBar from "../containers/NavBar";
 import Header from "./Header";
+import Footer from "./Footer";
 /*  eslint-enable */
 
 const App = () => (
   <div>
     <Header/>
     <NavBar />
+    <Footer />
   </div>
 );
 

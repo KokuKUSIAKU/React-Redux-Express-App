@@ -1,9 +1,77 @@
 /*  to be optimised with CSSLint further*/
 
+#abouthitcho {
+  color: #339933;
+  text-align: initial
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
   width: 100%
+}
+
+.border-box-item {
+  box-sizing: border-box
+}
+
+.contact-field {
+  display: block;
+  width: 80%;
+  font-size: 0.8em;
+  margin: 0.6em 0.6em 1em;
+  border-radius: 3px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, .6);
+  padding: 50px 0;
+  text-align: center
+}
+
+.footer .brand-name {
+  color: #339933
+}
+
+.footer-about {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: inherit
+}
+
+.footer-about p {
+  font: 20px;
+  line-height: 25px;
+  padding: 25px 0;
+  position: relative
+}
+
+.footer-about p::after {
+  bottom: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, .6);
+  content: "";
+  left: 0px;
+  position: absolute;
+  width: 100%
+}
+
+.footer-about-wrap, .footer-contact-wrap {
+  display: inline-block;
+  min-width: 400px;
+  text-align: initial;
+  vertical-align: top;
+  width: 50%
+}
+
+.footer-contact-form {
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.footer-item-align {
+  margin: 0 auto;
+  width: 80%
 }
 
 .header {
@@ -45,6 +113,7 @@ body {
   display: inline-block;
   text-align: center;
 }
+
 .menuItem a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
@@ -52,10 +121,10 @@ body {
 }
 
 .navbar {
-  font-size:1.3rem;
+  font-size: 1.3rem;
   font-family: signika, sans-serif;
-  margin:0 auto;
-  padding:0.3em 0;
+  margin: 0 auto;
+  padding: 0.3em 0;
   text-align: center;
 }
 
@@ -103,12 +172,19 @@ body {
   font-size: 0.8em
 }
 
+#submit {
+  background: #339933;
+  border: 0.5em solid transparent;
+  border-radius: 0.5em;
+  color: rgb(255, 255, 255);
+  width: 10em
+}
+
 @media screen and (max-width:700px) {
   .close-tag {
     background-image: linear-gradient(45deg, transparent 1.6em, #ccc 1.6em, #ccc 1.8em, transparent 1.8em), linear-gradient(135deg, transparent 1.2em, #ccc 1.2em, #ccc 1.4em, transparent 1.4em);
     background-size: 2.5em 2.5em;
   }
-
   .header .brand-name {
     left: auto;
     transform: inherit;
@@ -116,21 +192,19 @@ body {
     -webkit-transform: inherit;
     margin: 0 0.5em;
   }
-  .menuItem a{
-    padding:0;
+  .menuItem a {
+    padding: 0;
   }
   .menu {
-    margin:0;
-    padding:0 1em 0.5em 0.2em;
+    margin: 0;
+    padding: 0 1em 0.5em 0.2em;
   }
-
   .menuItem {
-    border-bottom:0.05em solid #339933;
+    border-bottom: 0.05em solid #339933;
     display: block;
-    padding:0.25em 0;
+    padding: 0.25em 0;
     text-align: left;
   }
-
   .navbar {
     background-color: #fff;
     left: -6.5em;
@@ -149,7 +223,6 @@ body {
   .ps-left-zero {
     left: 0;
     position: absolute;
-    
   }
   .sm-hidden {
     display: none;
