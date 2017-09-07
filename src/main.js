@@ -1,20 +1,16 @@
-/* eslint-disable */
-
+/*  eslint-disable */
 import React from "react";
-
+import App from "./components/App";
+import { BrowserRouter as Router } from "react-router-dom";
 /* eslint-enable */
 
-import { render } from "react-dom"; 
+import { render } from "react-dom";
 
 const router = (
-  <div>
-    <header class="header">Header</header>
-    <main> Main </main>
-    <footer>footer </footer>
-  </div>
+  <App/>
 );
 
 render(
   router,
-  document.getElementById( "app" ) 
-); 
+  document.getElementById("app")
+);

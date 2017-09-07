@@ -1,3 +1,103 @@
-body{
-  
+body {
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 0.05em solid #339933;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  height: 2.1em;
+  line-height: 2.1em;
+  padding: 0.5em 0;
+  position: relative
+}
+
+.header .brand-name {
+  display: inline-block;
+  font-family: 'Monoton', cursive;
+  margin: 0 1em;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  -ms-transform: translate(-50%);
+  -webkit-transform: translate(-50%)
+}
+
+.header .brand-name h1 {
+  color: #339933;
+  font-size: 2em;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin: 0
+}
+
+.lg-hidden {
+  display: none
+}
+
+.sc-media-icons {
+  display: inline-block;
+  font-size: 0.8em;
+  position: absolute;
+  right: 0.5em
+}
+
+.sc-media-icons ul {
+  display: inline-block;
+  margin: 0
+}
+
+.sc-media-item {
+  background: 0.5em 0.5em #339933;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 1.3em;
+  line-height: 1.3em;
+  list-style: none;
+  margin: 0.3em;
+  text-align: center;
+  width: 1.3em
+}
+
+.sc-media-item a {
+  color: rgb(255, 255, 255)
+}
+
+.site-message {
+  display: inline-block;
+  font-size: 0.8em
+}
+
+@media screen and (max-width:700px) {
+  .header .brand-name {  
+    left:auto;
+    transform: inherit;
+    -ms-transform: inherit;
+    -webkit-transform: inherit; 
+    margin:0 0.5em;
+  }
+  .nv-toggle {
+    background-color: transparent;
+    background-image: linear-gradient(transparent 0.3em, #ccc 0.3em, #ccc 0.5em, transparent 0.5em);
+    background-size: 2em 0.6em;
+    border: none;
+    height: 2em;
+    margin: 0.5em;
+    width: 2em
+  }
+  .nv-toggle:focus, .nv-toggle:hover {
+    outline: none;
+    border-radius: 0.1em;
+    border: 0.1em solid #339933
+  }
+  .sm-hidden {
+    display: none;
+  }
+  .sm-show {
+    display: initial!important;
+  }
 }
