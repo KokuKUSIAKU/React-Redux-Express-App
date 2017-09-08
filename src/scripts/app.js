@@ -61,7 +61,7 @@ module.exports = window.onload = (function appScript() {
   @param { String } slides : a class or id of an undordered list ul container of the slides 
   @param { String } pages: the pagination element corresponding to slides, an unordered list 
   @param { Number } time : a delay between consecutive transition and/or animation
-  @return none:
+  @return { Object } { start } : start (public) to initialise the slider animation
   */
 
   function InitSlider( slides, pages, time ) {

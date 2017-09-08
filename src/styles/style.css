@@ -74,6 +74,35 @@ body {
   width: 80%
 }
 
+.fullwidth-img{
+  height:auto;
+  margin-bottom:0;
+  width:100%
+}
+
+.grid-recipe, .grid-new-recipe{
+  background-color: rgb(255,255,255);
+  box-sizing: border-box;
+  display:inline-block;
+  padding:0;
+  margin:1vw;
+  vertical-align:top
+}
+
+.grid-new-recipe{
+  background-color: rgb(255,255,255);
+  border:0.01em solid #339933;
+  height:30vw!important;
+  min-width: 200px;
+  min-height: 300px;
+  padding-bottom:20px;
+  width:20vw!important
+}
+
+.grid-new-recipe h3{
+  font-size:1em
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.9);
   border-bottom: 0.05em solid #339933;
@@ -128,6 +157,20 @@ body {
   text-align: center;
 }
 
+.new-recipe{
+  box-sizing: border-box;
+  text-decoration: none
+}
+.new-recipe-header p{
+  font-size: 18px
+}
+.new-recipe-list{
+  background: rgba(149,149,149,0.15);
+  color:rgb(133, 150, 160);
+  padding:100px 0;
+  text-align: center
+}
+
 .nv-toggle {
   background-color: transparent;
   background-image: linear-gradient(transparent 0.3em, #ccc 0.3em, #ccc 0.5em, transparent 0.5em);
@@ -137,6 +180,14 @@ body {
   margin: 0.5em;
   width: 2em
 }
+
+.nv-toggle:focus, 
+.nv-toggle:hover{
+  border-radius:0.1em;
+  border:0.1em solid #339933; 
+  outline: none
+}
+
 
 .sc-media-icons {
   display: inline-block;
@@ -286,6 +337,29 @@ body {
   color: rgb(255, 255, 255);
   width: 10em
 }
+.user-profile {
+  height:2vw;
+  position:relative; 
+  width:100%
+}
+.user-pic {
+  background-color: rgba(145,145,145,1);
+  border:1.5px solid; 
+  border-radius:50%;
+  color:rgb(255,255,255);
+  height:4vw;
+  line-height: 4vw;
+  left:50%;
+  margin:0 auto;
+  position:absolute;
+  transform:translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); 
+  width:4vw
+}
+.user-name{
+  font-size:0.8em
+}
 
 @media screen and (max-width:700px) {
   .close-tag {
@@ -330,6 +404,14 @@ body {
   .ps-left-zero {
     left: 0;
     position: absolute;
+  }
+
+  .slider{
+    overflow-x: hidden
+  }
+  .slider-image{
+    height:100%;
+    width:auto
   }
   .sm-hidden {
     display: none;
