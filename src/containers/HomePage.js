@@ -5,10 +5,10 @@ import React from "react";
 import { connect } from "react-redux";
 import Home from "../components/Home";
 
-function mapStateToProps(state) {
+function mapStateToProps( state ) {
   var newrecipes;
-  if (state.newrecipes && state.newrecipes.length) {
-    newrecipes = state.newrecipes.map((val) => state.recipes[val]);
+  if ( state.newrecipes && state.newrecipes.length ) {
+    newrecipes = state.newrecipes.map(( val ) => state.recipes[val]);
   } else {
     newrecipes = [];
   }
@@ -20,6 +20,6 @@ function mapStateToProps(state) {
 
 const HomePage = connect(
   mapStateToProps
-)(Home);
+)( Home );
 
 export default HomePage;

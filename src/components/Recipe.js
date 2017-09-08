@@ -10,39 +10,39 @@ import PropTypes from "prop-types";
 // to be splited and use oop for scalable component
 // return object of components
 
-const Recipe = (props) => {
+const Recipe = ( props ) => {
   const id = props.recipe.name.split(" ").join("-");
   const _linkComponent = (
-    <div className="recipe" id={id}>
+    <div className="recipe" id={ id }>
       {
         props.title === "top" &&
-        <Link to={`/recipes/${id}`} style={{ textDecorationLine: "none" }}>
-          <h2>{props.recipe.name}</h2>
+        <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
+          <h2>{ props.recipe.name }</h2>
         </Link>
       }
 
-      <Link to={`/recipes/${id}`} style={{ textDecorationLine: "none" }}>
+      <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
         <img className="fullwidth-img"
-          src={props.recipe.image}
-          alt={props.recipe.description ? props.recipe.description : props.recipe.name} />
+          src={ props.recipe.image }
+          alt={ props.recipe.description ? props.recipe.description : props.recipe.name } />
       </Link>
 
       {
         props.title === "bottom" &&
-        <Link to={`/recipes/${id}`} style={{ textDecorationLine: "none" }}>
-          <h3>{props.recipe.name}</h3>
+        <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
+          <h3>{ props.recipe.name }</h3>
         </Link>
       }
     </div>
   );
 
   const _simpleComponent = (
-    <div className="recipe" id={id}>
-      {props.title === "top" && <h2>{props.recipe.name}</h2>}
+    <div className="recipe" id={ id }>
+      { props.title === "top" && <h2>{ props.recipe.name }</h2>}
       <img className="fullwidth-img"
-        src={props.recipe.image}
-        alt={props.recipe.description ? props.recipe.description : props.recipe.name} />
-      {props.title === "bottom" && <h3>{props.recipe.name}</h3>}
+        src={ props.recipe.image }
+        alt={ props.recipe.description ? props.recipe.description : props.recipe.name } />
+      { props.title === "bottom" && <h3>{ props.recipe.name }</h3> }
     </div>
   );
   
