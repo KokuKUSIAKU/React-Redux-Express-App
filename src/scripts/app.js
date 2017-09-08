@@ -95,7 +95,7 @@ module.exports = window.onload = (function appScript() {
     return {
       start
     };
-  }
+  }   
 
 
 })();

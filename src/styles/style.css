@@ -80,7 +80,7 @@ body {
   width:100%
 }
 
-.grid-recipe, .grid-new-recipe{
+.grid-new-recipe, .grid-recipe {
   background-color: rgb(255,255,255);
   box-sizing: border-box;
   display:inline-block;
@@ -101,6 +101,19 @@ body {
 
 .grid-new-recipe h3{
   font-size:1em
+}
+
+.grid-recipe{
+  width:18vw!important;
+  height: 25vw!important;
+  min-width: 200px;
+  min-height: 278px;
+  border:0.02em #339933 solid;
+}
+
+.grid-recipe .recipe h3{
+  font-size: 16px; 
+  color:rgb(133, 150, 160)
 }
 
 .header {
@@ -145,8 +158,8 @@ body {
 
 .menuItem a {
   color: rgba(0, 0, 0, 0.8);
-  text-decoration: none;
   padding: 0 1em;
+  text-decoration: none
 }
 
 .navbar {
@@ -186,6 +199,22 @@ body {
   border-radius:0.1em;
   border:0.1em solid #339933; 
   outline: none
+}
+
+.recipe{
+  box-sizing: border-box;
+  margin:1vw;
+  text-decoration: none
+}
+
+.recipe-list {
+  background-color: rgba(50, 50,50,0.2);
+  color:rgb(133, 150, 160);
+  padding: 25px 0 50px;
+  text-align: center
+}
+.recipe-list header {
+  margin-bottom: 2em
 }
 
 
