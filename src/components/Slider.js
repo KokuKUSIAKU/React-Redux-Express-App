@@ -10,16 +10,15 @@ var recettesImages = [
 ];
 const imagesPath = "https://github.com/KokuKUSIAKU/recipebox/blob/master/app/img/recipes/";
 
-function SliderPages(props) {
-  // how to add class dynamically to react component? 
+function SliderPages( props ) {
   return (
-    <ul className="slider-pages">
+    <ul className = "slider-pages">
       {(function () {
         let list = [];
-        for (let i = 0; i < props.number; i++) {
+        for ( let i = 0; i < props.number; i++ ) {
           list.push(
-            <li className="" key={i}>
-              <button className="sl-page "></button>
+            <li className = "" key = { i }>
+              <button className = "sl-page "></button>
             </li>
           );
         }
@@ -36,62 +35,56 @@ function SliderPages(props) {
 
 function ControlsButtons() {
   return (
-    <ul className="bt-controls">
-      <li className="bt-control bt-control-prev">
-        <button className="btn-prev" type="button" aria-label="previous slide">
-          <i className="fa fa-chevron-left" aria-hidden="true"></i>
+    <ul className = "bt-controls">
+      <li className = "bt-control bt-control-prev">
+        <button className = "btn-prev" type = "button" aria-label = "previous slide">
+          <i className = "fa fa-chevron-left" aria-hidden = "true"></i>
         </button>
       </li>
-      <li className="bt-control bt-control-next">
-        <button className="btn-next" type="button" aria-label="next slide">
-          <i className="fa fa-chevron-right" aria-hidden="true"></i>
+      <li className = "bt-control bt-control-next">
+        <button className = "btn-next" type = "button" aria-label = "next slide">
+          <i className = "fa fa-chevron-right" aria-hidden = "true"></i>
         </button>
       </li>
     </ul>
   );
 }
 
-
-
 // accessibility to be completed !!
 class Slider extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor( props ) {
+    super( props );
     this.state = {};
-  }
-  componentDidMount() {
-    //var images = document.querySelectorAll(".slider-image-wrapper");
   }
 
   render() {
     const ln = recettesImages.length;
-    const slides = recettesImages.map((recette, index) => (
-      <li className="slider-item" key={index}
-        data-index={index}
-        style={{ "zIndex": -2 * index }}>
-        <div className="slider-image-wrapper" >
-          <img className="slider-image"
-            src={imagesPath + recette + "?raw=true"}
-            alt="" />
+    const slides = recettesImages.map(( recette, index ) => (
+      <li className = "slider-item" key = { index }
+        data-index = { index }
+        style = {{ "zIndex": -2 * index }}>
+        <div className = "slider-image-wrapper" >
+          <img className = "slider-image"
+            src = { imagesPath + recette + "?raw=true" }
+            alt = "" />
         </div>
       </li>
     ));
     return (
       <section>
-        <div className="slider">
-          <ul className="slides">{slides}</ul>
-          <div className="slider-text-wrapper">
-            <div className="slider-text">
-              <p>Where cooking amateurs & lovers meet! </p>
+        <div className = "slider">
+          <ul className = "slides">{ slides }</ul>
+          <div className = "slider-text-wrapper">
+            <div className = "slider-text">
+              <p>Where cooking amateurs & lovers meet!</p>
             </div>
           </div>
-          <ControlsButtons />
-          <SliderPages number={ln} />
+          <ControlsButtons/>
+          <SliderPages number = { ln }/>
         </div>
       </section>
     );
   }
-
 }
 
 export default Slider;

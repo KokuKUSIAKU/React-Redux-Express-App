@@ -9,14 +9,14 @@ import store from "./store";
 import { render } from "react-dom";
 
 const router = (
-  <Provider store={store}>
+  <Provider store = { store }>
     <Router>
-      <App />
+      <App/>
     </Router>
   </Provider>
 );
 
 render(
   router,
-  document.getElementById("app")
+  document.getElementById( "app" )
 );

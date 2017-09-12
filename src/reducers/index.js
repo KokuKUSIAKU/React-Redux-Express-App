@@ -5,7 +5,6 @@ import recipes from "./recipes";
 import filter from "./filter";
 import newrecipes from "./newrecipes";
 
-
 const rootReducer = combineReducers({
   recipes,
   filter,

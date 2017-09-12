@@ -13,23 +13,23 @@ import PropTypes from "prop-types";
 const Recipe = ( props ) => {
   const id = props.recipe.name.split(" ").join("-");
   const _linkComponent = (
-    <div className="recipe" id={ id }>
+    <div className = "recipe" id={ id }>
       {
         props.title === "top" &&
-        <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
+        <Link to = { `/recipes/${id}` } style = {{ textDecorationLine: "none" }}>
           <h2>{ props.recipe.name }</h2>
         </Link>
       }
 
-      <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
-        <img className="fullwidth-img"
+      <Link to = { `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
+        <img className = "fullwidth-img"
           src={ props.recipe.image }
-          alt={ props.recipe.description ? props.recipe.description : props.recipe.name } />
+          alt={ props.recipe.description ? props.recipe.description : props.recipe.name }/>
       </Link>
 
       {
         props.title === "bottom" &&
-        <Link to={ `/recipes/${id}` } style={{ textDecorationLine: "none" }}>
+        <Link to = { `/recipes/${id}` } style = {{ textDecorationLine: "none" }}>
           <h3>{ props.recipe.name }</h3>
         </Link>
       }
@@ -39,7 +39,7 @@ const Recipe = ( props ) => {
   const _simpleComponent = (
     <div className="recipe" id={ id }>
       { props.title === "top" && <h2>{ props.recipe.name }</h2>}
-      <img className="fullwidth-img"
+      <img className = "fullwidth-img"
         src={ props.recipe.image }
         alt={ props.recipe.description ? props.recipe.description : props.recipe.name } />
       { props.title === "bottom" && <h3>{ props.recipe.name }</h3> }
@@ -49,7 +49,6 @@ const Recipe = ( props ) => {
   return props.routing ? _linkComponent:_simpleComponent;
 };
 
-// title should have top o bottom value only to be added
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
   title: PropTypes.oneOf(["top", "bottom"]),

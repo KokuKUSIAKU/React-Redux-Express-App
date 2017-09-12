@@ -1,7 +1,5 @@
 /*  eslint-disable */
 import React from "react";
-//import { Route } from "react-router-dom";
-
 import NavBar from "../containers/NavBar";
 import Main from "./Main";
 import Header from "./Header";
@@ -11,9 +9,9 @@ import Footer from "./Footer";
 const App = () => (
   <div>
     <Header/>
-    <NavBar />
-    <Main />
-    <Footer />
+    <NavBar/>
+    <Main/>
+    <Footer/>
   </div>
 );
 

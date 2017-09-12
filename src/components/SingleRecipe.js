@@ -11,17 +11,17 @@ const SingleRecipe = ( props ) => {
   const recipe = props.recipes[index];
   
   return (
-    <div className="single-recipe">
-      <div className="recipe-wrap single-recipe-div">
-        <div className="recipe-box">
-          <Recipe recipe={ recipe } title="top" routing={ false } />
+    <div className = "single-recipe">
+      <div className = "recipe-wrap single-recipe-div">
+        <div className = "recipe-box">
+          <Recipe recipe = { recipe } title = "top" routing = { false }/>
         </div>
       </div>
-      <div className="ingredients single-recipe-div">
+      <div className = "ingredients single-recipe-div">
         <header>
-          <h2 className="ingredient-header"> Ingredients </h2>
+          <h2 className = "ingredient-header">Ingredients</h2>
         </header>
-        <Ingredients ingredients={ recipe.ingredients } />
+        <Ingredients ingredients = { recipe.ingredients }/>
       </div>
     </div>
   );

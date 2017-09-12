@@ -12,22 +12,20 @@ class RecipeList extends React.Component {
   }
 
   componentDidMount() {
-    // this exacted only first time recipeList is mount
-    // subsequent focuses are managed by app.js
-    document.querySelector("#listofrecipes").focus();
+    //document.querySelector("#listofrecipes").focus();
   }
 
   render() {
-    const props = Object.assign({}, this.props);
+    const props = Object.assign({}, this.props );
     const list = props.recipes.map(( recipe, index ) =>
-      <div className="grid-recipe" key={ index } >
-        <Recipe recipe={ recipe } routing={ true } key={ index } index={ index } title="bottom" />
+      <div className = "grid-recipe" key={ index } >
+        <Recipe recipe = { recipe } routing = { true } key = { index } index = { index } title = "bottom"/>
       </div>
     );
     return (
-      <section className="recipe-list" aria-labelledby="listofrecipes">
-        <header >
-          <h2 id="listofrecipes" tabIndex={ -1 }>List of Recipes</h2>
+      <section className = "recipe-list" aria-labelledby = "listofrecipes">
+        <header>
+          <h2 id = "listofrecipes" tabIndex = { -1 }>List of Recipes</h2>
         </header>
         { list }
       </section>
