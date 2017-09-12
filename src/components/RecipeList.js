@@ -12,7 +12,7 @@ class RecipeList extends React.Component {
   }
 
   componentDidMount() {
-    //document.querySelector("#listofrecipes").focus();
+    document.querySelector("#listofrecipes").focus();
   }
 
   render() {
